@@ -39,20 +39,40 @@
     </style>
 </head>
 <body>
-    <div class="glowing-text">I am Ying! I successfully add a clock in the website page it just shows the beijing hour time.</div>
-    <div id="clock">00:00:00</div>
+    <div class="glowing-text">I am Ying! I successfully added multiple clocks to the website page.</div>
+    <div id="clockBeijing">Beijing Time: 00:00:00</div>
+    <div id="clockLondon">London Time: 00:00:00</div>
+    <div id="clockNewYork">New York Time: 00:00:00</div>
 
     <script>
         // JavaScript to update the time
         function updateClock() {
-            var now = new Date(); // current date
-            var hours = String(now.getHours()).padStart(2, '0');
-            var minutes = String(now.getMinutes()).padStart(2, '0');
-            var seconds = String(now.getSeconds()).padStart(2, '0');
-            document.getElementById('clock').innerHTML = hours + ":" + minutes + ":" + seconds;
-            setTimeout(updateClock, 1000); // Schedule update
+            var now = new Date(); // current UTC date
+    
+            // Update each clock with the respective city's time
+            document.getElementById('clockBeijing').innerHTML = "Beijing Time: " + getTimeForZone(now, 8); // UTC+8
+            document.getElementById('clockLondon').innerHTML = "London Time: " + getTimeForZone(now, 0); // UTC+0
+            document.getElementById('clockNewYork').innerHTML = "New York Time: " + getTimeForZone(now, -5); // UTC-5
+    
+            setTimeout(updateClock, 1000); // Schedule next update
         }
-        updateClock(); // Initial call to display clock
+    
+        // Function to calculate time for a given timezone offset
+        function getTimeForZone(date, offset) {
+            // Calculate the UTC time by adding the local timezone offset and then adding the desired offset
+            var utc = date.getTime() + (date.getTimezoneOffset() * 60000);
+            var newDate = new Date(utc + (3600000 * offset));
+    
+            // Extract hours, minutes, and seconds and format them
+            var hours = String(newDate.getUTCHours()).padStart(2, '0');
+            var minutes = String(newDate.getUTCMinutes()).padStart(2, '0');
+            var seconds = String(newDate.getUTCSeconds()).padStart(2, '0');
+    
+            return hours + ":" + minutes + ":" + seconds; // Format the time
+        }
+    
+        updateClock(); // Initial call to display clocks
     </script>
+    
 </body>
 </html>
