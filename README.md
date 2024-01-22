@@ -1,4 +1,4 @@
-In 2024 I'm gonna think about how to manage my knowledge.
+In 2024 I'm gonna think about how to manage my knowledge.\br
 我们不可否认的一个事实是，我们学会的所有知识都只是暂时存放在我们的脑海里，我们最后一定会遗忘，一定会遗忘
 为了防止遗忘，很多措施，比如我们反复阅读，我们反复练习，让他们变成长期的记忆。
 反复的行为没有问题，但是什么知识需要反复，什么知识不需要反复，才是知识的重点，正如我们知道“反复刻意练习”是一个需要反复记忆的知识一样
