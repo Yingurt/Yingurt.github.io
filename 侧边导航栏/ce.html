@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document</title>
+
+<style>
+
+/* 初始化样式 */
+
+*{
+
+margin: 0;
+
+padding: 0;
+
+text-decoration: none;
+
+list-style: none;
+
+}
+
+.nav{
+
+width: 150px;
+
+height: 400px;
+
+background: orange;
+
+position: fixed;/* 这里就是绝对定位了 */
+
+/* 定位后的位置 先把导航栏隐藏起来*/
+
+right: -150px;
+
+border-radius: 12px 0 0 12px ;
+
+overflow: hidden;
+
+/* 让点击有个过渡 */
+
+transition: 0.5s;
+
+}
+
+#cb:checked ~ .nav{
+
+right: 0px;
+
+}
+
+/* 设置好列表项li */
+
+.nav li{
+
+width: 150px;
+
+height: 40px;
+
+/* 水平垂直居中 */
+
+text-align: center;
+
+line-height: 40px;
+
+}
+
+.nav a:hover{
+
+background: #fc0;
+
+}
+
+.nav a{
+
+color: #000;
+
+display: block;
+
+}
+
+#cb{
+
+display: none;
+
+}
+
+label{
+
+width: 40px;
+
+height: 40px;
+
+background: orange;
+
+border-radius: 12px;
+
+display: inline-block;
+
+color: #fff;
+
+font-size: 40px;
+
+text-align: center;
+
+line-height: 40px;
+
+/* 绝对定位 */
+
+position: fixed;
+
+right: 150px;
+
+cursor: pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- 弹出的按钮要两个标签来配合实现 -->
+
+<input type="checkbox" id="cb">
+
+<label for="cb">≡</label>
+
+<!-- 先创建菜单吧 -->
+
+<div class="nav">
+
+<ul>
+
+<li><a href="#">我是菜单项</a></li>
+
+<li><a href="#">我是菜单项</a></li>
+
+<li><a href="#">我是菜单项</a></li>
+
+<li><a href="#">我是菜单项</a></li>
+
+<li><a href="#">我是菜单项</a></li>
+
+</ul>
+
+</div>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+我是换行<br>
+
+</body>
+
+</html> 作者：公子请留步--- https://www.bilibili.com/read/cv17502804/?spm_id_from=333.999.0.0 出处：bilibili
