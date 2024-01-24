@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>笔记时光机 </title>
-
+    <link rel="stylesheet" href="/简历模版/My-Resume-master/css/resume_pc.css" media="screen and (min-width: 840px)" />
+    <link rel="stylesheet" href="/简历模版/My-Resume-master/css/resume_mobile.css" media="screen and (max-width: 839px)"  />
 
     <!-- 我们先进行样式初始化 -->
     <style>
@@ -55,7 +56,8 @@
         }
         /*所以中间栏要加左右边距*/
         .content{
-            margin:0px 205px;
+            margin:0px 230px;
+            text-align: center;
         }
         .lside,.rside,.content{
             padding: 5px;
@@ -73,51 +75,66 @@
                 margin: 0;
             }
         }
+        .multiline-span {
+            white-space: pre-line;
+          }
     </style>
 </head>
 <body>
    <div class="main">
         <div class="header"> 
             <h1>笔记时光机</h1> 
-            <p>这里主要是放网站的logo或是banner广告</p>
+            <p>Author: Yingurt <br>Institute: University of Nottingham Ningbo China</p>
         </div>
         <div class="nav">
             <a href="Academic.html">My Academic</a>
             <a href="#">My Life</a>
-            <a href="#">My Reading Notes</a>
+            <a href="Reading.html">My Reading Notes</a>
             <a href="#">My Creations</a>
         </div>
+        <div class="person-info">
+            <span class="icon"></span>
+            <span class="subtitle">个人信息</span>
+            <span class="long-line"></span>
+            <div class="detail-list">
+                <div class="info-left">
+                    <span>学校： 宁波诺丁汉大学</span>
+                    <span>理工学院/统计学专业/2016</span>
+                </div>
+                <div class="info-right">
+                    <span>  个人宣言：我是一个自由、富有同理心、有强大执行力、为他人着想、希望为社会提供价值的人。他喜欢和人沟通，和别人交朋友，更喜欢和珍惜与自己志同道合的人。
+                        在追求人生理想的过程中，不论遇到多么大的困难和挫折，能够做到原则第一，做人第一。这样可以减少我的犹豫，让我更加笃定自己的选择。
+                        因为原则是亘古不变的，具有永恒性，更值得我去长期保持而不用去依赖那些不可控制的因素。</span>
+                    <span class="multiline-span">
+                        GitHub： <a href="https://yingurt.github.io/">https://yingurt.github.io/</a>
+                    </span>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+    
         <div class="container">
         <!-- 主体我们这里要放入三个盒子，分别是左中右，要注意的是我们用margin进行三栏布局
             中间的栏是自适应的，所以中间的栏放在第三个 -->
         <div class="lside">
-            <h2>我是左边栏</h2>
-            <p> 我是左边栏的内容我是左边栏的内容
-                我是左边栏的内容我是左边栏的内容
-                我是左边栏的内容我是左边栏的内容
-                我是左边栏的内容我是左边栏的内容
-                我是左边栏的内容我是左边栏的内容
-                我是左边栏的内容我是左边栏的内容
-            </p>
+            <h2>年度计划</h2>
+            <ul>
+                <li>为雪精拍12张</li>
+                <li>完成我的网页制作，并展示给大家</li>
+                <li></li>
+                </ul>
         </div>    
         <div class="rside">
-            <h2>我是右边栏</h2>
-            <p> 我是右边栏的内容我是右边栏的内容
-                我是右边栏的内容我是右边栏的内容
-                我是右边栏的内容我是右边栏的内容
-                我是右边栏的内容我是右边栏的内容
-                我是右边栏的内容我是右边栏的内容
-                我是右边栏的内容我是右边栏的内容
+            <h2>月度计划</h2>
+            <span class="multiline-span">
+                美国数学建模大赛成为一名合格的建模手
+                初步完成我的个人网页框架
+            </span>
             </p>
         </div>
         <div class="content">
-            <h2>我是中间栏</h2>
-            <p> 我是中间栏的内容我是中间栏的内容我是中间栏的内容
-                我是中间栏的内容我是中间栏的内容我是中间栏的内容
-                我是中间栏的内容我是中间栏的内容我是中间栏的内容
-                我是中间栏的内容我是中间栏的内容我是中间栏的内容
-                我是中间栏的内容我是中间栏的内容我是中间栏的内容
-            </p>
+            <h2>完成情况</h2>
+        
         </div>
         </div>
         <div class="footer">
